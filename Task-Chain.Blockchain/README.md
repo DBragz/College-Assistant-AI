@@ -7,7 +7,13 @@ Try running some of the following tasks:
 ```shell
 npx hardhat help
 npx hardhat test
+
+# macOS/Linux
 REPORT_GAS=true
+
+# Windows
+$env:REPORT_GAS=true
+
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Hello.ts
 ```
