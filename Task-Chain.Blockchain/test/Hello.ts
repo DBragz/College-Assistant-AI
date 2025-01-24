@@ -124,5 +124,9 @@ describe("Hello", function () {
         );
       });
     });
+
+    describe("Init Test", function () {
+      it("Testing describe function!");
+    });
   });
 });

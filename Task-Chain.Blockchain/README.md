@@ -32,19 +32,19 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 
 Try running some of the following tasks:
 
-    ```shell
-    npx hardhat help
-    npx hardhat test
+```shell
+npx hardhat help
+npx hardhat test
 
-    # macOS/Linux
-    REPORT_GAS=true
+# macOS/Linux
+REPORT_GAS=true
 
-    # Windows
-    $env:REPORT_GAS=true
+# Windows
+$env:REPORT_GAS=true
 
-    npx hardhat node
-    npx hardhat ignition deploy ./ignition/modules/Hello.ts
-    ```
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Hello.ts
+```
 
 ## Authors
 

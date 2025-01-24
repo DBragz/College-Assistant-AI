@@ -7,6 +7,7 @@ pragma solidity ^0.8.28;
 contract Hello {
     uint public unlockTime;
     address payable public owner;
+    string public message;
 
     event Withdrawal(uint amount, uint when);
 
