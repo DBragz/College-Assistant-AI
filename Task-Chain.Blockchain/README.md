@@ -44,6 +44,7 @@ $env:REPORT_GAS=true
 
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Hello.ts
+npx hardhat ignition deploy ./ignition/modules/Hello.ts --network sepolia
 ```
 
 ## Authors
