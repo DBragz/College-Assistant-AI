@@ -6,8 +6,7 @@ import { anyValue } from "@nomicfoundation/hardhat-chai-matchers/withArgs";
 import { expect } from "chai";
 import hre from "hardhat";
 
-describe("Hello", function () {
-  it("Hello Task Chain Team!");
+describe("Lock", function () {
   // We define a fixture to reuse the same setup in every test.
   // We use loadFixture to run this setup once, snapshot that state,
   // and reset Hardhat Network to that snapshot in every test.
@@ -21,7 +20,7 @@ describe("Hello", function () {
     // Contracts are deployed using the first signer/account by default
     const [owner, otherAccount] = await hre.ethers.getSigners();
 
-    const Lock = await hre.ethers.getContractFactory("Hello");
+    const Lock = await hre.ethers.getContractFactory("Lock");
     const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
 
     return { lock, unlockTime, lockedAmount, owner, otherAccount };
@@ -53,7 +52,7 @@ describe("Hello", function () {
     it("Should fail if the unlockTime is not in the future", async function () {
       // We don't use the fixture here because we want a different deployment
       const latestTime = await time.latest();
-      const Lock = await hre.ethers.getContractFactory("Hello");
+      const Lock = await hre.ethers.getContractFactory("Lock");
       await expect(Lock.deploy(latestTime, { value: 1 })).to.be.revertedWith(
         "Unlock time should be in the future"
       );
@@ -123,10 +122,6 @@ describe("Hello", function () {
           [lockedAmount, -lockedAmount]
         );
       });
-    });
-
-    describe("Init Test", function () {
-      it("Testing describe function!");
     });
   });
 });

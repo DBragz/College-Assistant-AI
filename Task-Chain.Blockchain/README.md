@@ -26,28 +26,45 @@
     ETHERSCAN_API_KEY={API_KEY_FROM_ETHERSCAN.COM}
     ```
 
-## Usage
+## Compile
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+1. Compile the contracts.
 
-Try running some of the following tasks:
+    ```shell
+    npx hardhat compile
+    ```
 
-```shell
-npx hardhat help
-npx hardhat test
+## Tests
 
-# macOS/Linux
-REPORT_GAS=true
+1. Run the tests.
 
-# Windows
-$env:REPORT_GAS=true
+    ```shell
+    npx hardhat test
+    ```
 
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Hello.ts
-npx hardhat ignition deploy ./ignition/modules/Hello.ts --network sepolia
-```
+## Deploy
+
+1. Deploy the contracts.
+
+    ```shell
+    npx hardhat ignition deploy ./ignition/modules/Lock.ts
+    npx hardhat ignition deploy ./ignition/modules/Lock.ts --network sepolia
+    ```
+
+## Run on Hardhat Network
+
+1. Run the node.
+
+    ```shell
+    # macOS/Linux
+    REPORT_GAS=true
+
+    # Windows
+    $env:REPORT_GAS=true
+
+    npx hardhat node
+    ```
 
 ## Authors
 
 - [Daniel Ribeirinha-Braga](https://github.com/DBragz)
-
