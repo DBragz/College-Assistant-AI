@@ -8,6 +8,12 @@ import hre from "hardhat";
 
 console.log("Hello Task Chain team!");
 
+describe("Task Chain", function () {
+  it("Starting it!", async function () {
+    console.log("      Inside it!");
+  });
+});
+
 describe("Lock", function () {
   // We define a fixture to reuse the same setup in every test.
   // We use loadFixture to run this setup once, snapshot that state,
