@@ -1,4 +1,4 @@
-# Task Chain
+# College Assistant AI
 
 Task Chain is a suite of software applications that work together to allow
 users to create, manage, and organize their own to-do lists.
