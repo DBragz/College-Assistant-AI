@@ -1,4 +1,4 @@
-# Software Development Kits Available
+# AI Agent Software Development Kits
 
 1. [AI Agent SDK for TypeScript](https://github.com/covalenthq/ai-agent-sdk)
 2. [Gaia](https://github.com/GaiaNet-AI)
