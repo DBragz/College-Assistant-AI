@@ -1,7 +1,7 @@
 # College Assistant AI
 
-Task Chain is a suite of software applications that work together to allow
-users to create, manage, and organize their own to-do lists.
+College Assistant AI is an artificial intelligence agent that will 
+assist students with day to day questions about their universities.
 
 ## Authors
 
